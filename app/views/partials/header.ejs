@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PilOri</title>
+  <link rel="stylesheet" href="/index.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <script src="/index.js" type="module" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="/" title="Retour à l'accueil">
+      <img class="logo-img" src="/logo.svg" alt="PilOri">
+    </a>
+    <nav class="menu">
+      <a class="menu-link" href="/tomates">Toutes les tomates</a>
+      <a class="menu-link" href="/tomates/denoncer">Dénoncer</a>
+    </nav>
+    <div class="header-tools">
+      <form action="/tomates" method="GET" class="search">
+        <input name="keywords" class="search-input" type="search" placeholder="Rechercher...">
+        <button class="search-submit" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+      <div class="account">
+        <a id="menuToggler" class="account-link account-link--mobile" href="#"><i data-feather="menu"></i></a>
+        <a id="searchToggler" class="account-link account-link--mobile" href="#"><i data-feather="search"></i></a>
+        <% if (isLogged) { %>
+          <a class="account-link" href="/profil" title="Profil"><i data-feather="user"></i></a>
+          <a class="account-link" href="/deconnexion" title="Déconnexion"><i data-feather="log-out"></i></a>
+        <% } else { %>
+          <a class="account-link" href="/connexion" title="Connexion"><i data-feather="log-in"></i></a>
+          <a class="account-link" href="/inscription" title="Inscription"><i data-feather="user-plus"></i></a>
+        <% } %>
+      </div>
+    </div>
+  </header>

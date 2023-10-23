@@ -1,0 +1,34 @@
+<%- include('partials/header') %>
+  <main class="content">
+    <section class="segment">
+      <article class="detail">
+        <header class="detail-header">
+          <div class="detail-intro">
+            <h1 class="detail-title">
+              <%= website.title %> au pilori
+            </h1>
+          </div>
+        </header>
+        <ul class="detail-list">
+          <% if (website.level) { %>
+            <li><span class="detail-label">Type</span> : <%= website.level %></li>
+          <% } %>
+          <% if (website.device) { %>
+           <li><span class="detail-label">Support</span> : <%= website.device %></li>
+          <% } %>
+        </ul>
+        <% if (website.description) { %>
+          <p class="detail-content"><%= website.description %></p>
+        <% } %>
+        <footer class="detail-actions">
+          <a class="btn" href="<%= website.address %>" target="_blank">Voir le disfonctionnement</a>
+        </footer>
+      </article>
+      <footer class="segment-actions">
+        <a href="/tomates" class="btn">
+          Retour à la liste
+        </a>
+      </footer>
+    </section>
+  </main>
+<%- include('partials/footer') %>

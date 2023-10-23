@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+  <main class="content">
+    <h1 class="content-title"><%= title %></h1>
+    <section class="segment">
+      <div class="segment-tools">
+        <button class="btn btn--view-mode" data-mode="list" title="Affichage en liste"><i data-feather="list"></i></button>
+        <button class="btn btn--view-mode btn--hidden" data-mode="grid" title="Affichage en mosaïque"><i data-feather="grid"></i></button>
+      </div>
+      <div class="card-container">
+        <% for (const website of websites) { %>
+          <%- include('partials/card', { website }) %>
+        <% } %>
+      </div>
+    </section>
+  </main>
+<%- include('partials/footer') %>

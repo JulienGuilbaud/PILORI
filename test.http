@@ -1,0 +1,15 @@
+GET http://localhost:3000/api/website
+
+###
+
+DELETE http://localhost:3000/api/website/5
+
+###
+
+POST http://localhost:3000/api/website
+Content-Type: application/json
+
+{
+  "title": "hello",
+  "address": "http://hello.com"
+}

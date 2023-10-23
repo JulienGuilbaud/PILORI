@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+<main class="content">
+  <h1 class="content-title"><%= locals.title || 'Prochainement' %></h1>
+  <section class="segment">
+    <p>La page demandée n'existe pas encore mais nous y travaillons.</p>
+    <div class="segment-actions">
+      <a class="btn btn--outline" href="/tomates">Envoyer des tomates</a>
+      <a class="btn" href="/tomates/denoncer">Commencer la dénonciation</a>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>

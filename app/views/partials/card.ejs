@@ -1,0 +1,27 @@
+<article class="card">
+  <div class="card-tags">
+    <% if (website.level) { %>
+      <span class="card-tag">
+        <%= website.level %>
+      </span>
+    <% } %>
+    <span class="card-tag card-tag--red">
+      <i data-feather="circle"></i>
+      130
+    </span>
+  </div>
+  <img class="card-img" src="/ph1.jpg" alt="">
+  <div class="card-content">
+    <h3 class="card-title"><%= website.title %></h3>
+    <% if (website.description) { %>
+      <p class="card-desc"><%= website.description %></p>
+    <% } %>
+    <a class="card-more" href="/tomates/<%= website.slug %>">Lire la suite</a>
+  </div>
+  <footer class="card-actions">
+    <a class="card-link" href="#">Consulter le site</a>
+    <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
+    <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
+    <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
+  </footer>
+</article>

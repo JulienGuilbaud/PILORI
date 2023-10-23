@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+  <main class="content">
+    <h1 class="content-title">PilOri</h1>
+    <section class="segment">
+      <h2 class="segment-title">À vos tomates</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eos eum nisi similique omnis amet ex, provident, aperiam incidunt, commodi dolorum ad veritatis beatae fuga dolorem perspiciatis totam quos. Voluptatum eveniet laborum alias, quaerat accusamus adipisci beatae, quidem, quis voluptatibus quam possimus? Inventore quasi totam, dolore assumenda voluptatum accusamus eos.</p>
+      <div class="segment-actions">
+        <a class="btn btn--outline" href="/tomates">Envoyer des tomates</a>
+        <a class="btn" href="/tomates/denoncer">Commencer la dénonciation</a>
+      </div>
+    </section>
+    <section class="segment">
+      <h2 class="segment-title">Les pires !</h2>
+      <div class="segment-tools">
+        <button class="btn btn--view-mode" data-mode="list" title="Affichage en liste"><i data-feather="list"></i></button>
+        <button class="btn btn--view-mode btn--hidden" data-mode="grid" title="Affichage en mosaïque"><i data-feather="grid"></i></button>
+      </div>
+      <div class="card-container">
+        <% for (const website of websites) { %>
+          <%- include('partials/card', { website }) %>
+        <% } %>
+      </div>
+      <footer class="segment-actions">
+        <a class="btn" href="/tomates">Tout voir</a>
+      </footer>
+    </section>
+    <%- include('partials/form') %>
+  </main>
+<%- include('partials/footer') %>

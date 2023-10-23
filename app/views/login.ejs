@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+<main class="content">
+  <h1 class="content-title">Connexion</h1>
+  <section class="segment">
+    <h2 class="segment-title">Indiquez vos identifiants.</h2>
+    <form action="/connexion" method="POST">
+      <% if (typeof alert !== 'undefined') { %>
+        <p class="message message--error" role="alert">Erreur : <%= alert %></p>
+      <% } %>
+      <label class="form-field">
+        Email <span title="Champ obligatoire">*</span>
+        <input class="form-input" type="text" name="email" required>
+      </label>
+      <label class="form-field">
+        Mot de passe <span title="Champ obligatoire">*</span>
+        <input class="form-input" type="password" name="password" required>
+      </label>
+      <div class="segment-actions">
+        <button class="btn" type="submit">Se connecter</button>
+      </div>
+    </form>
+  </section>
+</main>
+<%- include('partials/footer') %>

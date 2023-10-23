@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+<main class="content">
+  <h1 class="content-title">Erreur</h1>
+  <section class="segment">
+    <p><%= locals.message || 'Une erreur s\'est produite. Réeesayez plus tard.' %></p>
+    <div class="segment-actions">
+      <a class="btn btn--outline" href="/tomates">Envoyer des tomates</a>
+      <a class="btn" href="/tomates/denoncer">Commencer la dénonciation</a>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>
