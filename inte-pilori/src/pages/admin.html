@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PilOri</title>
+  <link rel="stylesheet" href="../scss/index.scss">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <script src="../js/global.js" type="module" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html" title="Retour à l'accueil">
+      <img class="logo-img" src="../img/logo.svg" alt="PilOri">
+    </a>
+    <nav class="menu">
+      <a class="menu-link" href="#">Tomates</a>
+      <a class="menu-link" href="#">Utilisateurs</a>
+    </nav>
+    <div class="header-tools">
+      <form class="search">
+        <input class="search-input" type="search" placeholder="Rechercher...">
+        <button class="search-submit" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+      <div class="account">
+        <a class="account-link account-link--mobile" href="#"><i data-feather="search"></i></a>
+        <a class="account-link" href="#"><i data-feather="user"></i></a>
+        <a class="account-link" href="#"><i data-feather="log-out"></i></a>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <h1 class="content-title">Administration</h1>
+    <section class="segment">
+      <h2 class="segment-title">
+        Toutes les tomates
+      </h2>
+      <ul class="admin">
+        <li class="admin-row">
+          <span class="admin-title">
+            Doctolib
+          </span>
+          <span class="admin-status admin-status--red">
+            A publier
+          </span>
+          <span class="admin-actions">
+            <a href="#">Consulter</a> - 
+            <a href="#">Editer</a>
+          </span>
+        </li>
+        <li class="admin-row">
+          <span class="admin-title">
+            SNCF
+          </span>
+          <span class="admin-status admin-status--orange">
+            A confirmer
+          </span>
+          <span class="admin-actions">
+            <a href="#">Consulter</a> - 
+            <a href="#">Editer</a>
+          </span>
+        </li>
+        <li class="admin-row">
+          <span class="admin-title">
+            Oclock.io
+          </span>
+          <span class="admin-status admin-status--green">
+            Publié
+          </span>
+          <span class="admin-actions">
+            <a href="#">Consulter</a> - 
+            <a href="#">Editer</a>
+          </span>
+        </li>
+        <li class="admin-row">
+          <span class="admin-title">
+            Toto.com
+          </span>
+          <span class="admin-status admin-status--blue">
+            Non publié
+          </span>
+          <span class="admin-actions">
+            <a href="#">Consulter</a> - 
+            <a href="#">Editer</a>
+          </span>
+        </li>
+        <li class="admin-row">
+          <span class="admin-title">
+            Tata.com
+          </span>
+          <span class="admin-status admin-status--blue">
+            Non publié
+          </span>
+          <span class="admin-actions">
+            <a href="#">Consulter</a> - 
+            <a href="#">Editer</a>
+          </span>
+        </li>
+        <li class="admin-row">
+          <span class="admin-title">
+            Titi.io
+          </span>
+          <span class="admin-status admin-status--blue">
+            Non publié
+          </span>
+          <span class="admin-actions">
+            <a href="#">Consulter</a> - 
+            <a href="#">Editer</a>
+          </span>
+        </li>
+      </ul>
+      <footer class="segment-actions">
+        <a class="segment-pagination" href="#">1</a> -
+        <a class="segment-pagination" href="#">2</a> -
+        <a class="segment-pagination" href="#">3</a> 
+        ...
+        <a class="segment-pagination" href="#">15</a>
+      </footer>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer-link" href="#">Consulter le site</a>
+  </footer>
+</body>
+</html>

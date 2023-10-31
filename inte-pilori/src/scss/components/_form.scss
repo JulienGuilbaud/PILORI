@@ -1,0 +1,18 @@
+.form {
+
+  &-field {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &-input {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid var(--border);
+    background-color: white;
+    
+    &--long {
+      min-height: 5em;
+    }
+  }
+}

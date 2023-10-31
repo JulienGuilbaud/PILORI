@@ -1,0 +1,20 @@
+@use '../vars';
+@use '../mixin';
+
+.logo {
+  padding: .75rem;
+  border-right: 1px solid var(--border);
+  transition: vars.$defaultTransition;
+
+  @include mixin.small {
+    padding: 1.25rem;
+  }
+
+  &-img {
+    display: block;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, .05);
+  }
+}

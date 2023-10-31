@@ -1,0 +1,54 @@
+@use '../mixin';
+
+.segment {
+  background-color: var(--background);
+  max-width: 50em;
+  margin: 4rem auto;
+  padding: 0 1rem;
+
+  @include mixin.big{
+    max-width: 75rem;
+  }
+
+  &-actions {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .05);
+    text-align: center;
+
+    & + & {
+      margin-top: 1rem;
+    }
+  }
+
+  &-title {
+    font-size: 2em;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+  }
+
+  &-pagination {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 5px;
+  }
+
+  &-tools {
+    display: none;
+    justify-content: flex-end;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+
+    @include mixin.small {
+      display: flex;
+    }
+
+    .btn {
+      border-radius: 5px;
+      
+      svg {
+        margin-right: 0;
+      }
+    }
+  }
+}

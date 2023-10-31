@@ -1,0 +1,63 @@
+@use './mixin';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  --red-dark: #e66767;
+  --red-light: #ea8685;
+  --blue-dark: #546de5;
+  --blue-light: #778beb;
+  --border: rgba(0, 0, 0, .2);
+  --background: white;
+  --text: black;
+}
+
+body {
+  line-height: 1.4;
+  font-family: Roboto, sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+input, select, button, textarea {
+  font: inherit;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue-light);
+
+  &:hover {
+    color: var(--blue-dark);
+  }
+}
+
+.emphasis {
+  font-style: italic;
+  opacity: .5;
+}
+
+.richtext {
+  h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.15em;
+  }
+
+  ul {
+    margin: 1rem 0;
+    padding-left: 1em;
+    list-style-type: disc;
+  }
+}

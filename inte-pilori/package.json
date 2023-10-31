@@ -1,5 +1,24 @@
 {
+  "name": "pilori",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel {src/*.html,src/**/*.html}",
+    "build": "npm run clear & parcel build {src/*.html,src/**/*.html} --no-source-maps --no-content-hash --dist-dir public & rm public/index.html & rm -r public/pages",
+    "clear": "rm -rf .parcel-cache public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "parcel-namer-hashless": "^1.0.4"
+  },
   "dependencies": {
-    "pilori": "file:.."
+    "feather-icons": "^4.29.0",
+    "pilori": "file:..",
+    "reset-css": "^5.0.1"
   }
 }

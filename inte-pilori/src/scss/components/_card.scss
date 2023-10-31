@@ -1,0 +1,123 @@
+@use '../mixin';
+
+.card {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, .2);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @include mixin.small {
+    width: calc((100% - 2rem) / 2);
+  }
+
+  @include mixin.medium {
+    width: calc((100% - 4rem) / 3);
+  }
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-tags {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: flex;
+    z-index: 1;
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  &-content {
+    padding: 1rem;
+  }
+
+  &-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: .5rem;
+    background-color: var(--blue-light);
+    color: white;
+    border-radius: 5px;
+    line-height: 1;
+    margin-left: .5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+
+    &--red {
+      background-color: var(--red-dark);
+
+      svg {
+        margin-right: .25rem;
+      }
+    }
+  }
+
+  &-actions {
+    margin-top: auto;
+    display: flex;
+    border-top: 1px solid var(--border);
+    align-items: center;
+  }
+
+  &-link {
+    padding: 1rem;
+    flex-grow: 1;
+  }
+
+  &-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    margin-right: .5rem;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 0 3px var(--blue-dark);
+    }
+
+    &--red {
+      background-color: var(--red-dark);
+    }
+
+    &--light {
+      background-color: var(--blue-light);
+    }
+
+    &--dark {
+      background-color: var(--blue-dark);
+    }
+  }
+}
+
+
+
+@include mixin.small {
+  .card-container--list .card {
+    width: 100%;
+    flex-direction: row;
+
+    &-img {
+      width: 30%;
+      object-fit: cover;
+    }
+
+    &-actions {
+      border-top: 0;
+    }
+  }
+}

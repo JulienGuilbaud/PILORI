@@ -1,0 +1,104 @@
+@use '../mixin';
+
+.detail {
+  &-title {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  &-subtitle {
+    font-weight: bold;
+    opacity: .4;
+  }
+
+  &-header {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+  }
+
+  &-share {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    margin-right: .5rem;
+    margin-left: auto;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--blue-dark);
+
+    &:hover {
+      background-color: var(--blue-light);
+    }
+  }
+
+  &-counter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    padding: 0 1rem;
+    background-color: var(--red-dark);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+
+    svg {
+      margin-right: .5rem;
+    }
+  }
+
+  &-caption {
+    font-style: italic;
+    opacity: .35;
+    margin-bottom: .5rem;
+  }
+
+  &-list {
+    color: var(--blue-dark);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &-label {
+    font-weight: bold;
+  }
+
+  &-actions {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 1rem 0 2rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    @include mixin.medium {
+      flex-direction: row;
+    }
+
+    .btn {
+      width: 100%;
+      margin-left: 0;
+
+      @include mixin.medium {
+        width: auto;
+
+        & + .btn {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .btn:last-child {
+      margin-left: auto;
+    }
+  }
+}

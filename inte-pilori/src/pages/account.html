@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PilOri</title>
+  <link rel="stylesheet" href="../scss/index.scss">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <script src="../js/global.js" type="module" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html" title="Retour à l'accueil">
+      <img class="logo-img" src="../img/logo.svg" alt="PilOri">
+    </a>
+    <nav class="menu">
+      <a class="menu-link" href="#">Toutes les tomates</a>
+      <a class="menu-link" href="#">Dénoncer</a>
+    </nav>
+    <div class="header-tools">
+      <form class="search">
+        <input class="search-input" type="search" placeholder="Rechercher...">
+        <button class="search-submit" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+      <div class="account">
+        <a class="account-link account-link--mobile" href="#"><i data-feather="search"></i></a>
+        <a class="account-link" href="#"><i data-feather="user"></i></a>
+        <a class="account-link" href="#"><i data-feather="log-out"></i></a>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <h1 class="content-title">Mon compte</h1>
+    <section class="segment">
+      <h2 class="segment-title">
+        Pseudo du membre
+      </h2>
+      <p class="emphasis">Membre depuis le 01/23/4567</p>
+      <div class="richtext">
+        <h3>
+          Site reportés
+        </h3>
+        <ul>
+          <li><a href="#">Doctolib</a></li>
+          <li><a href="#">Fnac</a></li>
+        </ul>
+        <h3>
+          Tomates lancées
+        </h3>
+        <ul>
+          <li><a href="#">Doctolib</a></li>
+          <li><a href="#">Fnac</a></li>
+          <li><a href="#">Sncf</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="segment">
+      <h2 class="segment-title">
+        Editer mon profil
+      </h2>
+      <form class="form">
+        <label class="form-field">
+          Email
+          <input type="email" placeholder="Votre email" class="form-input">
+        </label>
+        <label class="form-field">
+          Pseudonyme
+          <input type="text" placeholder="Votre pseudo" class="form-input">
+        </label>
+        <label class="form-field">
+          Mot de passe actuel
+          <input type="password" placeholder="Mot de passe" class="form-input">
+        </label>
+        <label class="form-field">
+          Nouveau mot de passe
+          <input type="password" placeholder="Mot de passe" class="form-input">
+        </label>
+        <label class="form-field">
+          Confirmation du mot de passe
+          <input type="password" placeholder="Répéter le mot de passe" class="form-input">
+        </label>
+        <div class="segment-actions">
+          <button type="submit" class="btn">Mettre à jour</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer-link" href="#">Plan du site</a>
+    <a class="footer-link" href="#">Mentions légales</a>
+    <a class="footer-link" href="#">Contact</a>
+  </footer>
+</body>
+</html>

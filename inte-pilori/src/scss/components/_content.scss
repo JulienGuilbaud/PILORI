@@ -1,0 +1,24 @@
+@use '../mixin';
+
+.content {
+  font-size: 1.2em;
+
+  &-title {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 2rem 0 2rem;
+    background-image: url(../img/bandeau.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #522D25;
+    text-shadow: 15px 15px 25px rgba(0, 0, 0, .5);
+
+    @include mixin.small {
+      font-size: 4em;
+    }
+  }
+}

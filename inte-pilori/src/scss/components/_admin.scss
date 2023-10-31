@@ -1,0 +1,47 @@
+.admin {
+  margin: 1rem 0;
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &:nth-child(odd) {
+      background-color: rgba(0, 0, 0, .05);
+    }
+  }
+
+  &-status {
+    padding: 0.5rem;
+    font-size: .8em;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0 auto 0 1rem;
+
+    &--red {
+      background-color: antiquewhite;
+      color: darkred;
+      border-color: darkred;
+    }
+
+    &--orange {
+      background-color: cornsilk;
+      color: darkred;
+      border-color: darkred;
+    }
+
+    &--green {
+      background-color: honeydew;
+      color: darkgreen;
+      border-color: darkgreen;
+    }
+
+    &--blue {
+      background-color: aliceblue;
+      color: darkblue;
+      border-color: darkblue;
+    }
+  }
+}

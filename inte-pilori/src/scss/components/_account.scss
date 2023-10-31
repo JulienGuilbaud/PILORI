@@ -1,0 +1,37 @@
+@use '../vars';
+@use '../mixin';
+
+.account {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+
+  &-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .05);
+    margin: 0 .25rem;
+    border: 1px solid var(--border);
+    color: #777;
+    transition: vars.$defaultTransition;
+    
+    @include mixin.small {
+      margin: 0 .5rem;
+    }
+
+    &--mobile {
+      @include mixin.small {
+        display: none;
+      }
+    }
+
+    &:hover {
+      color: black;
+      background-color: rgba(0, 0, 0, .15);
+    }
+  }
+}

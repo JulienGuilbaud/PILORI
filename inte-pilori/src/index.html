@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PilOri</title>
+  <link rel="stylesheet" href="./scss/index.scss">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <script src="./js/global.js" type="module" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="./index.html" title="Retour à l'accueil">
+      <img class="logo-img" src="./img/logo.svg" alt="PilOri">
+    </a>
+    <nav class="menu">
+      <a class="menu-link" href="#">Toutes les tomates</a>
+      <a class="menu-link" href="#">Dénoncer</a>
+    </nav>
+    <div class="header-tools">
+      <form class="search">
+        <input class="search-input" type="search" placeholder="Rechercher...">
+        <button class="search-submit" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+      <div class="account">
+        <a id="menuToggler" class="account-link account-link--mobile" href="#"><i data-feather="menu"></i></a>
+        <a id="searchToggler" class="account-link account-link--mobile" href="#"><i data-feather="search"></i></a>
+        <a class="account-link" href="#"><i data-feather="user"></i></a>
+        <a class="account-link" href="#"><i data-feather="log-out"></i></a>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <h1 class="content-title">PilOri</h1>
+    <section class="segment">
+      <h2 class="segment-title">À vos tomates</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eos eum nisi similique omnis amet ex, provident, aperiam incidunt, commodi dolorum ad veritatis beatae fuga dolorem perspiciatis totam quos. Voluptatum eveniet laborum alias, quaerat accusamus adipisci beatae, quidem, quis voluptatibus quam possimus? Inventore quasi totam, dolore assumenda voluptatum accusamus eos.</p>
+      <div class="segment-actions">
+        <a class="btn btn--outline" href="#">Envoyer des tomates</a>
+        <a class="btn" href="#">Commencer la dénonciation</a>
+      </div>
+    </section>
+    <section class="segment">
+      <h2 class="segment-title">Les pires !</h2>
+      <div class="segment-tools">
+        <button class="btn btn--view-mode" data-mode="list" title="Affichage en liste"><i data-feather="list"></i></button>
+        <button class="btn btn--view-mode btn--hidden" data-mode="grid" title="Affichage en mosaïque"><i data-feather="grid"></i></button>
+      </div>
+      <div class="card-container">
+        <article class="card">
+          <div class="card-tags">
+            <span class="card-tag">
+              Moche
+            </span>
+            <span class="card-tag card-tag--red">
+              <i data-feather="circle"></i>
+              130
+            </span>
+          </div>
+          <img class="card-img" src="./img/ph1.jpg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">Doctolib</h3>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, placeat!</p>
+            <a class="card-more" href="#">Lire la suite</a>
+          </div>
+          <footer class="card-actions">
+            <a class="card-link" href="#">Consulter le site</a>
+            <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
+            <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
+            <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
+          </footer>
+        </article>
+        <article class="card">
+          <div class="card-tags">
+            <span class="card-tag">
+              Bloquant
+            </span>
+            <span class="card-tag card-tag--red">
+              <i data-feather="circle"></i>
+              220
+            </span>
+          </div>
+          <img class="card-img" src="./img/ph2.jpg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">Fnac</h3>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum maxime explicabo!</p>
+            <a class="card-more" href="#">Lire la suite</a>
+          </div>
+          <footer class="card-actions">
+            <a class="card-link" href="#">Consulter le site</a>
+            <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
+            <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
+            <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
+          </footer>
+        </article>
+        <article class="card">
+          <div class="card-tags">
+            <span class="card-tag">
+              Moche
+            </span>
+            <span class="card-tag card-tag--red">
+              <i data-feather="circle"></i>
+              235
+            </span>
+          </div>
+          <img class="card-img" src="./img/ph3.jpg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">Agence Nationale des Titres de Sécurité</h3>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, placeat!</p>
+            <a class="card-more" href="#">Lire la suite</a>
+          </div>
+          <footer class="card-actions">
+            <a class="card-link" href="#">Consulter le site</a>
+            <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
+            <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
+            <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
+          </footer>
+        </article>
+        <article class="card">
+          <div class="card-tags">
+            <span class="card-tag">
+              Casse tête
+            </span>
+            <span class="card-tag card-tag--red">
+              <i data-feather="circle"></i>
+              138
+            </span>
+          </div>
+          <img class="card-img" src="./img/ph4.jpg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">SNCF</h3>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum maxime explicabo!</p>
+            <a class="card-more" href="#">Lire la suite</a>
+          </div>
+          <footer class="card-actions">
+            <a class="card-link" href="#">Consulter le site</a>
+            <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
+            <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
+            <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
+          </footer>
+        </article>
+        <article class="card">
+          <div class="card-tags">
+            <span class="card-tag">
+              Moche
+            </span>
+            <span class="card-tag card-tag--red">
+              <i data-feather="circle"></i>
+              431
+            </span>
+          </div>
+          <img class="card-img" src="./img/ph1.jpg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">Craiglist</h3>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, placeat!</p>
+            <a class="card-more" href="#">Lire la suite</a>
+          </div>
+          <footer class="card-actions">
+            <a class="card-link" href="#">Consulter le site</a>
+            <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
+            <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
+            <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
+          </footer>
+        </article>
+        <article class="card">
+          <div class="card-tags">
+            <span class="card-tag">
+              Bloquant
+            </span>
+            <span class="card-tag card-tag--red">
+              <i data-feather="circle"></i>
+              211
+            </span>
+          </div>
+          <img class="card-img" src="./img/ph2.jpg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">Oclock.io</h3>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum maxime explicabo!</p>
+            <a class="card-more" href="#">Lire la suite</a>
+          </div>
+          <footer class="card-actions">
+            <a class="card-link" href="#">Consulter le site</a>
+            <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
+            <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
+            <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
+          </footer>
+        </article>
+      </div>
+      <footer class="segment-actions">
+        <a class="btn" href="#">Tout voir</a>
+      </footer>
+    </section>
+    <section class="segment">
+      <h2 class="segment-title">Dénoncer un site inaccessible</h2>
+      <form class="form">
+        <label class="form-field">
+          Titre du dysfonctionnement
+          <input type="text" class="form-input">
+        </label>
+        <label class="form-field">
+          Description
+          <textarea class="form-input form-input--long"></textarea>
+        </label>
+        <label class="form-field">
+          Adresse de la page web
+          <input type="url" class="form-input">
+        </label>
+        <label class="form-field">
+          Sur quel type de support
+          <select class="form-input">
+            <option>Mobile</option>
+            <option>Ordinateur</option>
+            <option>Lecteur d'écran</option>
+          </select>
+        </label>
+        <label class="form-field">
+          Degré d'importance
+          <select class="form-input">
+            <option>Bloquant</option>
+            <option>Gênant</option>
+            <option>Casse tête</option>
+          </select>
+        </label>
+        <div class="segment-actions">
+          <button type="submit" class="btn">Soumette le dysfonctionnement à l'équipe de modération</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer-link" href="#">Plan du site</a>
+    <a class="footer-link" href="#">Mentions légales</a>
+    <a class="footer-link" href="#">Contact</a>
+    <button class="footer-totop" title="Retour en haut de page"><i data-feather="arrow-up-circle"></i></button>
+  </footer>
+</body>
+</html>

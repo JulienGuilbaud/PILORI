@@ -1,0 +1,47 @@
+@use '../vars';
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: var(--blue-light);
+  border-radius: 2em;
+  font-weight: bold;
+  transition: vars.$defaultTransition;
+  cursor: pointer;
+  border: 0;
+  margin: .25rem 0;
+
+  &--outline {
+    box-shadow: inset 0 0 0 4px var(--blue-light);
+    color: var(--blue-light);
+    background-color: transparent;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &:hover {
+    background-color: var(--blue-dark);
+    color: white;
+  }
+
+  svg {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  &--red {
+    background-color: var(--red-dark);
+
+    &:hover {
+      background-color: var(--red-light);
+    }
+  }
+}
+
+.btn + .btn {
+  margin-left: 1rem;
+}

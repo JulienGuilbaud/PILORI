@@ -1,0 +1,41 @@
+@use '../vars';
+@use '../mixin';
+
+.menu {
+  padding: 0 .5rem;
+  display: none;
+  position: fixed;
+  top: calc(3.5rem + 1px);
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  z-index: 29;
+
+  &--on {
+    display: flex;
+  }
+
+  @include mixin.small {
+    position: static;
+    display: block;
+    width: auto;
+  }
+
+  &-link {
+    height: 100%;
+    padding: .5rem;
+    color: var(--text);
+    transition: vars.$defaultTransition;
+
+    @include mixin.small {
+      display: inline-flex;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .05);
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PilOri</title>
+  <link rel="stylesheet" href="../scss/index.scss">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <script src="../js/global.js" type="module" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html" title="Retour à l'accueil">
+      <img class="logo-img" src="../img/logo.svg" alt="PilOri">
+    </a>
+    <nav class="menu">
+      <a class="menu-link" href="#">Toutes les tomates</a>
+      <a class="menu-link" href="#">Dénoncer</a>
+    </nav>
+    <div class="header-tools">
+      <form class="search">
+        <input class="search-input" type="search" placeholder="Rechercher...">
+        <button class="search-submit" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+      <div class="account">
+        <a class="account-link account-link--mobile" href="#"><i data-feather="search"></i></a>
+        <a class="account-link" href="#"><i data-feather="user"></i></a>
+        <a class="account-link" href="#"><i data-feather="log-out"></i></a>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <section class="segment">
+      <article class="detail">
+        <header class="detail-header">
+          <div class="detail-intro">
+            <h1 class="detail-title">
+              Doctolib au pilori
+            </h1>
+            <h2 class="detail-subtitle">Je ne peux pas prendre RDV !</h2>
+          </div>
+          <button class="detail-share"><i data-feather="share-2"></i></button>
+          <span class="detail-counter"><i data-feather="circle"></i> 180</span>
+        </header>
+        <figure class="detail-figure">
+          <img src="../img/ph-screen.jpg" alt="">
+          <figcaption class="detail-caption">Disfonctionnement de Doctolib</figcaption>
+        </figure>
+        <ul class="detail-list">
+          <li><span class="detail-label">Reporteur</span> : Marie Dupont</li>
+          <li><span class="detail-label">Type</span> : bloquant</li>
+          <li><span class="detail-label">Support</span> : Ordinateur</li>
+        </ul>
+        <p class="detail-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid dolore nam ducimus fugiat non sunt voluptatibus ex pariatur iste expedita accusamus quisquam dicta beatae laudantium blanditiis quis tenetur recusandae molestias repellendus, alias doloribus. Quaerat, eligendi sit maiores enim beatae natus labore, sint aliquid architecto pariatur perspiciatis neque facere amet.</p>
+        <footer class="detail-actions">
+          <a class="btn">Voir le disfonctionnement</a>
+          <button class="btn"><i data-feather="check"></i> Inaccessibilité corrigée</button>
+          <button class="btn btn--red"><i data-feather="circle"></i> Lancer une tomate</button>
+        </footer>
+      </article>
+      <footer class="segment-actions">
+        <a href="#" class="btn">
+          Retour à la liste
+        </a>
+      </footer>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer-link" href="#">Plan du site</a>
+    <a class="footer-link" href="#">Mentions légales</a>
+    <a class="footer-link" href="#">Contact</a>
+  </footer>
+</body>
+</html>
